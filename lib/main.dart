@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_jerry/profile.dart';
+import 'package:flutter_jerry/latihan2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,21 +12,21 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Belajar Flutter',
+      title: 'Belajar Row & Column',
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.blue.shade500,
+          backgroundColor: Colors.blueAccent,
           title: Text(
             'Flutter',
             style: TextStyle(
-              color: Colors.black54,
+              color: Colors.black,
               fontSize: 30,
               fontWeight: FontWeight.bold
             ),
           ),
           centerTitle: true,
         ),
-        body: Profile()
+        body: Latihan2()
       ),
     );
   }
@@ -42,9 +42,15 @@ class MainWidget extends StatelessWidget {
     return Row(
       children: <Widget>[
         Expanded(
-          child: Text('Nama',
-              style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
-              textAlign: TextAlign.center),
+          child: Text(
+            'Belajar Row & Column',
+            style: TextStyle(
+              color: Colors.black, 
+              fontSize: 15, 
+              fontWeight: FontWeight.bold
+            ),
+            textAlign: TextAlign.center
+          ),
         ),
       ],
     );

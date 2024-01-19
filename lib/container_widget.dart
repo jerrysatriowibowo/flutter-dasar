@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_jerry/main.dart';
 
-class ContainerWidget extends StatelessWidget {
-  const ContainerWidget({super.key});
+class ContainerWidget1 extends StatelessWidget {
+  const ContainerWidget1 ({super.key});
 
   @override
   Widget build(BuildContext context) {
